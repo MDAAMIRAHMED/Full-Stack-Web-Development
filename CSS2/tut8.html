@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psuedo Selectors In CSS</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 600px;
+            margin: 34px auto;
+            padding: 34px;
+            border: 3px solid green;
+        }
+        h1{
+            font: normal normal bold 40px/1.2em 'Times New Roman', serif;
+            text-align: center;
+            letter-spacing: -0.005em;
+            color: plum;
+            background-color: beige;
+            border-bottom: 3px solid black;
+            margin: 13px;
+            padding: 13px;
+        }
+
+        p{
+            font: italic normal normal 30px/1em Verdana;
+            color: white;
+            background-color: rgb(75, 73, 73);
+            margin: 13px;
+            padding: 13px;
+        }
+
+        #btn{
+            margin: 13px;
+            padding: 13px;
+            border: none;
+            font: oblique bold 20px georgia;
+            text-align: center;
+            cursor: pointer;
+            color: white;
+            background-color: red;
+        }
+
+        a{
+            text-decoration: none;
+            margin: 13px;
+            padding: 13px;
+        }
+
+        #btn:hover{
+            color: rgb(23, 135, 29);
+            background-color: rgb(135, 198, 135);
+            border: 2px solid black;
+        }
+
+        #btn:visited{
+            color: blue;
+            background-color: rgb(149, 72, 116);
+        }
+
+        #btn:active{
+            color: paleturquoise;
+            background-color: tomato;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Psuedo Selectors In CSS</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non sequi praesentium asperiores obcaecati earum provident sapiente, cupiditate aperiam magni voluptates labore repudiandae laboriosam aliquid minima aliquam distinctio similique. Amet laborum repellendus mollitia explicabo expedita.</p>
+        <a href="https://www.snapchat.com" id="btn">Read More</a>
+        <button id="btn">Contact Us</button>
+    </div>
+</body>
+</html>

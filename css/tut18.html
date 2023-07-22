@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height, Width, Background and Borders</title>
+    <style>
+        p{
+            font-size: 33px;
+        }
+
+        #firstPara{
+            color: white;
+            background-color: rgb(126, 126, 214);
+            height: 50px;
+            width: 450px;
+            /* border: 2px solid red; */
+            border-width: 3px;
+            border-style: double;
+            border-color: blueviolet;
+            border-radius: 13px;
+        }
+
+        #secondPara{
+            color: white;
+            background-color: rgb(126, 126, 214);
+            height: 50px;
+            width: 450px;
+            border: 2px solid red; 
+            border-top: 4px solid green;
+            border-right: 12px solid blueviolet;
+            border-bottom: 8px dashed navajowhite;
+            border-left: 15px solid grey;
+
+            border-top-left-radius: 12px;
+            border-top-right-radius: 34px;
+            border-bottom-left-radius: 130px;
+            border-bottom-right-radius: 130px;
+        }
+        #thirdPara{
+            color: black;
+            height: 550px;
+            width: 450px;
+            /* border: 2px solid red; */
+            border-width: 3px;
+            border-style: double;
+            border-color: blueviolet;
+            border-radius: 13px;
+
+            background-image: url("data:image/jpeg;base64,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");
+            background-position: top right;
+            background-repeat: no-repeat;
+            background-color: rgb(179, 179, 221);
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Height, Widht, Height and Borders</h1>
+    <p id="firstPara">This the first paragraph</p>
+    <h1>Height, Widht, Height and Borders</h1>
+    <p id="secondPara">This the first paragraph</p>
+    <h1>Height, Widht, Height and Borders</h1>
+    <p id="thirdPara">This the first paragraph</p>
+</body>
+</html>
