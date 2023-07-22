@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selector and Nth-child Selector</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        h1{
+            font: 500 40px/1.2em Verdana;
+            text-align: center;
+            text-transform: capitalize;
+            letter-spacing: -0.005em;
+            color: white;
+            background-color: aquamarine;
+            border-bottom: 3px solid black;
+        }
+
+        form{
+            width: 20%;
+            margin: 34px auto;
+            padding: 13px;
+            border: 3px solid black;
+
+        }
+        label{
+            display: block;
+            cursor: pointer;
+        }
+        input{
+            width: 13rem;
+            margin: 2px 3px;
+            border-radius: 13px;
+            /* cursor: pointer; */
+        }
+
+        /* attribute selector */
+        input[type='text']{
+            background-color: rgb(198, 198, 239);
+        }
+
+        input[type='email']{
+            color: rgb(76, 9, 9);
+            background-color: rgb(119, 214, 214);
+        }
+
+        input[type='password']{
+            color: blue;
+            background-color: antiquewhite;
+        }
+
+        input[type='submit']{
+            border-radius: 0px;
+            background-color: magenta;
+            color: white;
+            padding: 3px 3px;
+            margin: 3px 3px;
+            border: 3px solid blue;
+            width: 130px;
+            cursor: pointer;
+        }
+
+        a[target='_blank']{
+            text-decoration: none;
+            color: red;
+        }
+
+        li{
+            list-style: square;
+        }
+
+        ::marker{
+            color: pink;
+        }
+        ul{
+            width: 13%;
+            margin: 13px auto;
+            padding: 13px 23px;
+            border: 3px solid black;
+        }
+
+        /* li:nth-child(3){
+            color: aqua;
+        } */
+
+        /* li:nth-child(3n+3){
+            color: aqua;
+        } */
+
+        li:nth-child(even){
+            background-color: brown;
+        }
+
+        li:nth-child(odd){
+            background-color: rgb(179, 153, 153);
+        }
+    </style>
+</head>
+<body>
+    <h1>Attribute Selector and Nth-child Selector</h1>
+    <form action="backend.php">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" name="myName" id="name">
+        </div>
+
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="myEmail" id="email">
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" name="myPass" id="password">
+        </div>
+        <a href="http://google.com" target="_blank">Read the agreement</a>
+        <input type="submit" value="Submit Now">
+    </form>
+
+
+    <div>
+        <ul>
+            <li>Child 1</li>
+            <li>Child 2</li>
+            <li>Child 3</li>
+            <li>Child 4</li>
+            <li>Child 5</li>
+            <li>Child 6</li>
+            <li>Child 7</li>
+            <li>Child 8</li>
+            <li>Child 9</li>
+            <li>Child 10</li>
+        </ul>
+    </div>
+</body>
+</html>

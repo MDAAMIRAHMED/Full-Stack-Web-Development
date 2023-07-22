@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and Clear in CSS</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            border: 2px solid red;
+            background-color: aliceblue;
+            width: 600px;
+            margin: 33px auto;
+        }
+
+        #fruit{
+            border: 3px solid black;
+            background-color: aquamarine;
+            padding: 13px 10px;
+            margin: 13px 10px;
+
+            width: 45%;
+            float: left;
+        }
+
+        
+        #computer{
+            border: 3px solid black;
+            background-color: aquamarine;
+            padding: 13px 10px;
+            margin: 13px 10px;
+            width: 45%;
+            float: right;
+        }
+
+        
+        #stationary{
+            border: 3px solid black;
+            background-color: aquamarine;
+            padding: 13px 10px;
+            margin: 13px 10px;
+            width: 90%;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="text-align: center;">Float And Clear In CSS</h1>
+        <div id="fruit">
+            <h1>Fruit</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae, necessitatibus natus esse, consequuntur sunt quas vel facere, porro nostrum eaque dicta sequi quibusdam? Unde sequi magni laudantium, incidunt pariatur voluptatibus itaque fugiat maiores doloremque!</p>
+        </div>
+
+        <div id="computer">
+            <h1>Computer</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae, necessitatibus natus esse, consequuntur sunt quas vel facere, porro nostrum eaque dicta sequi quibusdam? Unde sequi magni laudantium, incidunt pariatur voluptatibus itaque fugiat maiores doloremque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, iusto. Ipsam, quas repudiandae cupiditate omnis iste dicta, eligendi modi impedit odit delectus debitis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aut voluptatum facilis iste reiciendis quaerat tenetur a ratione beatae, sapiente quis, esse corrupti autem!</p>
+        </div>
+
+        <div id="stationary">
+            <h1>Stationary</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae, necessitatibus natus esse, consequuntur sunt quas vel facere, porro nostrum eaque dicta sequi quibusdam? Unde sequi magni laudantium, incidunt pariatur voluptatibus itaque fugiat maiores doloremque!</p>
+        </div>
+    </div>
+</body>
+</html>
