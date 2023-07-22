@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Tutorial</title>
+</head>
+<body>
+    <script>
+        let JsonObj = {
+            name: "Aamir",
+            'roll no': 'B20AI059',
+            'age': 20,
+            'channel': 'CWH'
+        };
+
+        let myJSONstr = JSON.stringify(JsonObj);
+        console.log(myJSONstr);
+
+        myJSONstr = myJSONstr.replace('CWH','CWA');
+        console.log(myJSONstr);
+
+        let newJSONobj = JSON.parse(myJSONstr);
+        console.log(newJSONobj);
+    </script>
+</body>
+</html>
